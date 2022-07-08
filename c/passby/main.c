@@ -1,23 +1,30 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <math.h>
 
-void addFive(unsigned int *, unsigned int *);
+void add(int *, int *), subtract(int *, int *);
 
 int main (){
-	unsigned int numberOne = 0, numberTwo = 0;
+	int number = 0, change = 0;
 	
 	printf("Initial: ");
-	scanf("%d", &numberOne);
-	printf("Increment: ");
-	scanf("%d", &numberTwo);
+	scanf("%d", &number);
+	printf("Change: ");
+	scanf("%d", &change);
 	
-	while (numberOne < 100){
-		addFive(&numberOne, &numberTwo);
-		printf("%d\t%d\n", (unsigned int) numberOne, (unsigned int) numberTwo);
+	
+	while (abs(number) < 100){
+//		add(&numberOne, &numberTwo);
+		subtract(&number, &change);
+		printf("%d\t%d\n", (int) number,  (int) abs(number));
 	}
 }
 
-void addFive(unsigned int * numberOne, unsigned int * numberTwo) {
-	*numberOne += *numberTwo;
-	*numberTwo += 2;
+//void add(int * numberOne, int * numberTwo) {
+//	*numberOne += *numberTwo;
+//	*numberTwo += 2;
+//}
+
+void subtract(int * number, int * change) {
+	*number -= *change;
 }

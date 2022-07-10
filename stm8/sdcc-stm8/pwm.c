@@ -3,12 +3,9 @@
 #define FREQ_16MHZ (char) 0
 typedef unsigned char uint8_t;
 
-void setup(void), 
-	 loop(void), 
-	 delay(void),
-     clockSetup(char frequency), 
-	 PWM_Setup(void), 
-	 setDutyCycle(unsigned int perCent);
+void setup(void), loop(void), 
+	 delay(void), clockSetup(char frequency), 
+	 PWM_Setup(void), setDutyCycle(unsigned int perCent);
  
 void main(void) {
 	clockSetup(FREQ_16MHZ);

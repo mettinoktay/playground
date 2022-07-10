@@ -42,7 +42,7 @@ void setup(void),
 	 setDutyCycle(unsigned int perCent);
  
 void main(void) {
-	clockSetup(0);
+	clockSetup(FREQ_16MHZ);
 	PWM_Setup();
 	loop();
 }
@@ -109,6 +109,3 @@ void delay(void) {
 	unsigned int counter = 5000;
 	while (counter) counter--;
 }
-
-
-

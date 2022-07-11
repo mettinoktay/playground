@@ -2,12 +2,14 @@
 #include <stdio.h>
 #include <math.h>
 
+#define pi (double) 3.14159
+
 char * main () {
 	FILE * sinFunc = fopen("sinusoidal.txt", "w");
 	double sinDegree = 0;
 	
 	for (double degree = 0; degree <= 180 ; degree += 0.1) {
-		sinDegree = sin(degree);
+		sinDegree = sin(pi/degree);
 		if(sinDegree >= 0) {
 			fprintf(sinFunc, " %f\n", sinDegree);
 		}

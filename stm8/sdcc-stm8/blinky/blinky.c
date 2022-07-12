@@ -4,7 +4,7 @@
 #include <stdlib.h>
 
 int main() {
-	unsigned int d=0;
+	unsigned long int d=0;
 	unsigned long int randomNumber = 0;
 	// Configure pins
 

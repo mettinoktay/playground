@@ -5,7 +5,8 @@
 #define pi (double) 3.14159
 
 char * main () {
-	FILE * sinFunc = fopen("sinusoidal.txt", "w");
+	FILE * sinFunc     = fopen("sinusoidal.txt", "w");
+	
 	double sinDegree = 0;
 	
 	for (double degree = 0; degree <= 180 ; degree += 0.1) {
@@ -19,5 +20,8 @@ char * main () {
 	}
 	
 	fclose(sinFunc);
-	return "you shouldn't've gotten here"; 	
+	
+	FILE * sinFuncRead = fopen("sinusoidalCopy.txt", "rw");
+	
+	return "you shouldn't have come here"; 	
 }

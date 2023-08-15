@@ -26,5 +26,5 @@ int main (){
 //}
 
 void subtract(int * number, int * change) {
-	*number -= *change;
+	*number += *change;
 }

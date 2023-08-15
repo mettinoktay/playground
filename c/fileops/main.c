@@ -23,5 +23,7 @@ char * main () {
 	
 	FILE * sinFuncRead = fopen("sinusoidalCopy.txt", "rw");
 	
+	//değişiklik
+
 	return "you shouldn't have come here"; 	
 }
